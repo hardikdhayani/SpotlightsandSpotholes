@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "228527154694",
+    "firebase_url": "https://spotlights-and-spotholes-619.firebaseio.com",
+    "project_id": "spotlights-and-spotholes-619",
+    "storage_bucket": "spotlights-and-spotholes-619.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228527154694:android:e7efecac2df89076",
+        "android_client_info": {
+          "package_name": "hjddevs.spotlightsandspotholes.com.spotlightsandspotholes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMkPPTX0Zeb-VVjKie976rIwKQXuaVLfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228527154694-ac59e277e021g2msafburdo1m6arfuht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

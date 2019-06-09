@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationFetchTest"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/button_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp"
+        android:text="Get Your Current Location"
+        app:layout_constraintBottom_toTopOf="@+id/slcomplains"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_location" />
+
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+    <Button
+        android:id="@+id/slcomplains"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="textEmailAddress"
+        android:text="Streetlight Complaints"
+        app:layout_constraintBottom_toTopOf="@+id/phcomplains"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/broken"
+        app:layout_constraintTop_toBottomOf="@+id/button_location" />
+
+    <Button
+        android:id="@+id/phcomplains"
+        android:layout_width="200dp"
+        android:layout_height="52dp"
+
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="15dp"
+        android:text="Potholes Complaints"
+        app:layout_constraintBottom_toTopOf="@+id/newsl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pothole"
+        app:layout_constraintTop_toBottomOf="@+id/slcomplains" />
+
+    <Button
+        android:id="@+id/newsl"
+        android:layout_width="200dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="15dp"
+        android:text="Request a New streetlight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/streetlight"
+        app:layout_constraintTop_toBottomOf="@+id/phcomplains" />
+
+
+    <ImageView
+        android:id="@+id/broken"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button_location"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="106dp"
+        android:src="@drawable/brokenlight"
+        app:layout_constraintBottom_toTopOf="@+id/pothole"
+        app:layout_constraintEnd_toStartOf="@+id/slcomplains"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/pothole"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@drawable/brokenlight"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="106dp"
+        android:src="@drawable/potholes"
+        app:layout_constraintBottom_toTopOf="@+id/streetlight"
+        app:layout_constraintEnd_toStartOf="@+id/phcomplains"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/broken" />
+
+    <ImageView
+        android:id="@+id/streetlight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@drawable/potholes"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="107dp"
+        android:src="@drawable/streetlight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/newsl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pothole" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/broken"
+        app:layout_constraintStart_toStartOf="@+id/text_location"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
